@@ -1,5 +1,0 @@
-apples, 2.99
-bananas, 5.22
-cherries, $1.99
-peaches, $0.99
-uppercase, $0.01

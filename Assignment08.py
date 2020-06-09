@@ -24,6 +24,7 @@ class Product:
         product_name: (string) with the products's name
         product_price: (float) with the products's standard price
     methods:
+        __init__(self, product_name, product_price): a constructor method to create Product objects
     changelog: (When,Who,What)
         RRoot,1.1.2030,Created Class
         ABryant,6.5.2020, Added constructor to Product Class
@@ -44,9 +45,11 @@ class FileProcessor:
     """Processes data to and from a file and a list of product objects:
 
     methods:
-        save_data_to_file(file_name, list_of_product_objects):
-
         read_data_from_file(file_name): -> (a list of product objects)
+            Parameters supplied are a file name to read. The contents of the file are returned as a list.
+
+        save_data_to_file(file_name, list_of_product_objects):
+            Parameters supplied are the active file name and the active list of products. Nothing is returned.
 
     changelog: (When,Who,What)
         RRoot,1.1.2030,Created Class
@@ -193,5 +196,8 @@ while True:
             print('Products have not been saved.\nReturning to menu.')
         else:
             print('**Invalid Selection**\nProducts have not been saved.\nReturning to menu.')
+
+    else:
+        print('**Invalid Entry**\nPlease select a valid menu option.')
 
 # Main Body of Script  ---------------------------------------------------- #
